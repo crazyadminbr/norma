@@ -10,10 +10,12 @@
             background-color: rgb(0, 24, 0);
             color: white;
         }
-        .post{
-            border-radius: 100px;
-        }
-        
+		.vid{
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			flex-wrap: wrap;
+		}
     </style>
 </head>
 <body>
@@ -46,11 +48,13 @@
         </div>
     </nav>
     <br><br>
-    <video controls width="250">
-  <source src="./shiko.mp4" type="video/webm">
-  
+
+	<div class="vid">
+    <video controls width="500">
+  		<source src="./shiko.mp4" type="video/webm">
   Ваш браузер не поддерживает встроенные видео :(
-</video>
+	</video>
+	</div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
